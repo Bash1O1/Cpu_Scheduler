@@ -60,9 +60,19 @@ Fourth line: It represents the no. of process you want to execute
 
 Fifth line: Start of description of processes. Each process is to be described on a separate line. For algorithms 1 through 7, each process is described using a comma-separated list specifying:
 
-1- String specifying a process name
-2- Arrival Time
-3- Service Time
+String specifying a process name,Arrival Time,Service Time
+
+For Aging algorithm (algorithm 8), each process is described using a comma-separated list specifying:
+
+String specifying a process name,Arrival Time,Priority
+
+**Important** Processes are assumed to be sorted based on the arrival time. If two processes have the same arrival time, then the one with the lower priority is assumed to arrive first.
+
+Conclusion
+
+We have successfully executed the function of an efficient cpu scheduler which utilise multiple scheduling algorithms for efficient execution of process.
+
+
 
 
 
