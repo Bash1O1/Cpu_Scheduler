@@ -32,21 +32,37 @@ Run the executable file
 
 Input Format
 
-First Line is either 'trace' for gaant chart or 'stats' for waiting time and turnaround time
+First Line:  It is either 'trace' for gaant chart or 'stats' for waiting time and turnaround time
 
-second line consist of the the no. correspong to the algorithm you want to execute
+second line: It consist of the the no. correspong to the algorithm you want to execute
 
 FCFS (First Come First Serve) --> 1
+
 RR (Round Robin) --> 2
+
 SPN (Shortest Process Next) --> 3
+
 SRT (Shortest Remaining Time) --> 4
+
 HRRN (Highest Response Ratio Next) --> 5
+
 FB-1, (Feedback where all queues have q=1) --> 6
+
 FB-2i, (Feedback where q= 2i) --> 7
+
 Aging --> 8
 
 Round Robin and Aging have a parameter specifying the quantum q to be used. Therefore, a policy entered as 2-3 means Round Robin with q=3. Also, policy 8-2 means Aging with q=2.
 
+third line: It consist of an integer which is the last number to shown on the timeline
+
+Fourth line: It represents the no. of process you want to execute 
+
+Fifth line: Start of description of processes. Each process is to be described on a separate line. For algorithms 1 through 7, each process is described using a comma-separated list specifying:
+
+1- String specifying a process name
+2- Arrival Time
+3- Service Time
 
 
 
